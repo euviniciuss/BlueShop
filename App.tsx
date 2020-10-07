@@ -17,14 +17,14 @@ export default function App() {
     Poppins_600SemiBold,
     Poppins_700Bold
   });
-  
-  if(!fontLoaded) {
+
+  if (!fontLoaded) {
     return <AppLoading />
   } else {
     return (
       <>
-        <StatusBar style="light"/>
-        <Routes />  
+        <StatusBar style="light" />
+        <Routes />
       </>
     );
   }

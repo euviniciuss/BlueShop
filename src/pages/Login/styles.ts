@@ -36,7 +36,34 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontFamily: "Poppins_400Regular",
   },
-  
+
+  inputGroup: {
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+  },
+
+  label: {
+    marginTop: 24,
+    marginBottom: 12,
+
+    color: '#6d7c94',
+
+    fontSize: 15,
+    fontFamily: "Poppins_400Regular",
+  },
+
+  input: {
+    height: 54,
+
+    backgroundColor: "#e0e3e6",
+
+    borderRadius: 8,
+    paddingHorizontal: 16,
+    marginTop: 4,
+
+    justifyContent: "center",
+  },
+
   buttonLogin: {
     display: "flex",
     alignItems: "center",
@@ -64,10 +91,10 @@ const styles = StyleSheet.create({
 
     marginTop: 32,
   },
-  
+
   footerText: {
     alignSelf: 'center',
-  
+
     fontFamily: "Poppins_400Regular",
     color: '#6d7c94',
   },

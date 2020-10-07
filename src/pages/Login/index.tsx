@@ -1,18 +1,21 @@
-import React from 'react';
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
 import Header from '../../components/Header';
-import Input from '../../components/Input';
 
 import styles from './styles';
+import { TextInput } from 'react-native-gesture-handler';
 
 const Login: React.FC = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   const { navigate } = useNavigation();
 
   const handleLogin = () => {
-    alert('Você fez login')
+    console.log(email);
   };
 
   const handleNavigateToRegister = () => {
@@ -25,34 +28,45 @@ const Login: React.FC = () => {
 
   return (
     <>
-      <Header/>
+      <Header />
       <View style={styles.container}>
         <Text style={styles.title}>Bem vindo de volta!</Text>
         <Text style={styles.subTitle}>Olá, faça o login para continuar</Text>
 
-        <Input 
-          label="Digite seu email" 
-          placeholder="Digite seu email para fazer login"
-        /> 
-        <Input 
-          label="Digite sua senha" 
-          placeholder="Digite sua senha para fazer login"
-        /> 
-        
-        
+        <View style={styles.inputGroup}>
+          <Text style={styles.label}>Email</Text>
+          <TextInput
+            style={styles.input}
+            placeholder='Digite seu email para fazer login'
+            placeholderTextColor="#6d7c94"
+            value={email}
+            onChangeText={setEmail}
+          />
+
+          <Text style={styles.label}>Senha</Text>
+          <TextInput
+            style={styles.input}
+            placeholder='Digite sua senha para fazer login'
+            placeholderTextColor="#6d7c94"
+            value={password}
+            onChangeText={setPassword}
+          />
+        </View>
+
         <TouchableOpacity onPress={handleNavigateToResetPassword}>
           <Text style={styles.resetPassowrdTitle}>Esqueceu a senha?</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity      
-        style={styles.buttonLogin}
-        onPress={handleLogin}
+        <TouchableOpacity
+          style={styles.buttonLogin}
+          activeOpacity={0.9}
+          onPress={handleLogin}
         >
           <Text style={styles.textButtonLogin}>Entrar</Text>
         </TouchableOpacity>
 
         <View style={styles.textFooterAling} >
-          <Text style={styles.footerText}>Ainda não tem uma conta? </Text> 
+          <Text style={styles.footerText}>Ainda não tem uma conta? </Text>
           <TouchableOpacity onPress={handleNavigateToRegister}>
             <Text style={styles.footerTextBlue}>Cadastre-se</Text>
           </TouchableOpacity>
