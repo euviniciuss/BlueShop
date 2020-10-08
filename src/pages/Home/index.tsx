@@ -20,22 +20,22 @@ const Home: React.FC = () => {
   };
 
   return (
-    <View style={ styles.container }>
+    <View style={styles.container}>
       <View>
         <SimpleLineIcons name="social-soundcloud" size={150} color="white" />
-        <Text style={ styles.title }>Blue Cloud</Text>
+        <Text style={styles.title}>Blue Cloud</Text>
       </View>
-      <View style={ styles.containerButton }>
-        <TouchableOpacity      
-          style={ styles.buttonLogin }
+      <View style={styles.containerButton}>
+        <TouchableOpacity
+          style={styles.buttonLogin}
           onPress={handleNavigateToLogin}
         >
           <Text style={styles.textButtonLogin}>Sign in</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={ styles.buttonRegister }
+          style={styles.buttonRegister}
           onPress={handleNavigateToRegister}
-        > 
+        >
           <Text style={styles.textButtonRegister}>Sing up</Text>
         </TouchableOpacity>
       </View>
