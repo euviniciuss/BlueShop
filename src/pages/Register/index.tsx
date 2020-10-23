@@ -5,6 +5,8 @@ import { useNavigation } from '@react-navigation/native';
 
 import Header from '../../components/Header';
 
+import firebase from 'firebase';
+
 import styles from './styles';
 
 const Register: React.FC = () => {
@@ -16,7 +18,21 @@ const Register: React.FC = () => {
   const { navigate } = useNavigation();
 
   const handleRegister = () => {
-    navigate('Landing');
+
+    if (!email || !password) {
+      alert('Você precisa informar email e senha para fazer o cadastro');
+    } else {
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+        .then(sucess => {
+          alert('Usuário cadastrado com sucesso!')
+          setTimeout(() => {
+            navigate('Landing');
+          }, 1000);
+        }).catch(erro => {
+          alert(erro)
+        })
+    }
+
   };
 
   const handleNavigateToLogin = () => {

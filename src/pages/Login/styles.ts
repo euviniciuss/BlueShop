@@ -1,14 +1,16 @@
 import { StyleSheet } from 'react-native';
 
+import { GlobalColors } from '../../styles/Global';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: GlobalColors.colorContainer,
   },
 
   formContainer: {
 
-    backgroundColor: '#fff',
+    backgroundColor: GlobalColors.colorContainer,
 
     marginTop: -15,
 
@@ -22,7 +24,7 @@ const styles = StyleSheet.create({
 
   title: {
     marginTop: 24,
-    color: '#182947',
+    color: GlobalColors.colorTitle,
     fontSize: 24,
     fontFamily: "Poppins_700Bold",
   },
@@ -30,13 +32,13 @@ const styles = StyleSheet.create({
   resetPassowrdTitle: {
     marginVertical: 25,
 
-    color: '#3670ff',
+    color: GlobalColors.colorBackground,
     fontSize: 13,
     fontFamily: "Poppins_700Bold",
   },
 
   subTitle: {
-    color: '#6d7c94',
+    color: GlobalColors.colorSubTitle,
     fontSize: 15,
     fontFamily: "Poppins_400Regular",
   },
@@ -50,7 +52,7 @@ const styles = StyleSheet.create({
     marginTop: 24,
     marginBottom: 12,
 
-    color: '#6d7c94',
+    color: GlobalColors.colorSubTitle,
 
     fontSize: 15,
     fontFamily: "Poppins_400Regular",
@@ -59,7 +61,7 @@ const styles = StyleSheet.create({
   input: {
     height: 54,
 
-    backgroundColor: "#e0e3e6",
+    backgroundColor: GlobalColors.colorInputBackground,
 
     borderRadius: 8,
     paddingHorizontal: 16,
@@ -77,11 +79,11 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 20,
 
-    backgroundColor: '#3670ff',
+    backgroundColor: GlobalColors.colorBackground,
   },
 
   textButtonLogin: {
-    color: '#fff',
+    color: GlobalColors.colorContainer,
 
     fontSize: 16,
     fontFamily: "Poppins_700Bold",
@@ -100,12 +102,12 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
 
     fontFamily: "Poppins_400Regular",
-    color: '#6d7c94',
+    color: GlobalColors.colorSubTitle,
   },
 
   footerTextBlue: {
     fontFamily: "Poppins_700Bold",
-    color: '#3670ff',
+    color: GlobalColors.colorBackground,
   },
 
 });

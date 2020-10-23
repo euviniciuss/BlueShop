@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, KeyboardAvoidingView, SafeAreaView, TextInputProps, TextInputFocusEventData } from 'react-native';
+import { View, Text, TouchableOpacity, KeyboardAvoidingView, SafeAreaView, TextInput } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
 import Header from '../../components/Header';
 
+import firebase from '../../config/firebase';
+
 import styles from './styles';
-import { TextInput } from 'react-native-gesture-handler';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -17,7 +18,17 @@ const Login: React.FC = () => {
   const { navigate } = useNavigation();
 
   const handleLogin = () => {
-    console.log(email);
+    navigate('Home')
+    // firebase.auth().signInWithEmailAndPassword(email, password)
+    //   .then(sucess => {
+    //     alert('Você fez login');
+
+    //     setTimeout(() => {
+    //       navigate('Landing');
+    //     }, 1000);
+    //   }).catch(erro => {
+    //     alert('Ops! Algo deu errado');
+    //   })
   };
 
   const handleNavigateToRegister = () => {

@@ -1,46 +1,42 @@
 import React from 'react';
+import { SafeAreaView, View, Text, ScrollView } from 'react-native';
 
-import { View, Text } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
-import { SimpleLineIcons } from '@expo/vector-icons';
-
-import { useNavigation } from '@react-navigation/native';
+import Header from '../../components/Header';
+import Banner from '../../components/Banner';
+import Card from '../../components/Card';
 
 import styles from './styles';
 
 const Home: React.FC = () => {
-  const { navigate } = useNavigation();
-
-  const handleNavigateToLogin = () => {
-    navigate('Login');
-  };
-
-  const handleNavigateToRegister = () => {
-    navigate('Register');
-  };
-
   return (
-    <View style={styles.container}>
-      <View>
-        <SimpleLineIcons name="social-soundcloud" size={150} color="white" />
-        <Text style={styles.title}>Blue Cloud</Text>
-      </View>
-      <View style={styles.containerButton}>
-        <TouchableOpacity
-          style={styles.buttonLogin}
-          onPress={handleNavigateToLogin}
-        >
-          <Text style={styles.textButtonLogin}>Sign in</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.buttonRegister}
-          onPress={handleNavigateToRegister}
-        >
-          <Text style={styles.textButtonRegister}>Sing up</Text>
-        </TouchableOpacity>
-      </View>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Header />
+      <ScrollView style={styles.productsContainer}>
+        <View style={styles.containerMain}>
+          <Banner />
+
+          <View style={styles.containerTitle}>
+            <Text style={styles.title}>Tênis</Text>
+            <Text style={styles.subTitle}>Ver todos</Text>
+          </View>
+
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{ paddingHorizontal: 5 }}
+          >
+            <View style={styles.containerCard} >
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </View>
+          </ScrollView>
+        </View>
+
+      </ScrollView>
+    </SafeAreaView>
   );
-}
+};
 
 export default Home;
