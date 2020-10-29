@@ -7,6 +7,7 @@ import Header from '../../components/Header';
 
 import firebase from '../../config/firebase';
 
+import { globalStyles } from '../../styles/Global';
 import styles from './styles';
 
 const Login: React.FC = () => {
@@ -46,13 +47,13 @@ const Login: React.FC = () => {
 
           <Header />
           <View style={styles.formContainer}>
-            <Text style={styles.title}>Bem vindo de volta!</Text>
-            <Text style={styles.subTitle}>Olá, faça o login para continuar</Text>
+            <Text style={globalStyles.titlePage}>Bem vindo de volta!</Text>
+            <Text style={globalStyles.subTitlePage}>Olá, faça o login para continuar</Text>
 
             <View style={styles.inputGroup}>
-              <Text style={styles.label}>Email</Text>
+              <Text style={globalStyles.label}>Email</Text>
               <TextInput
-                style={styles.input}
+                style={globalStyles.input}
                 placeholder='Digite seu email para fazer login'
                 placeholderTextColor="#6d7c94"
                 keyboardType="email-address"
@@ -63,9 +64,9 @@ const Login: React.FC = () => {
                 onChangeText={setEmail}
               />
 
-              <Text style={styles.label}>Senha</Text>
+              <Text style={globalStyles.label}>Senha</Text>
               <TextInput
-                style={styles.input}
+                style={globalStyles.input}
                 placeholder='Digite sua senha para fazer login'
                 placeholderTextColor="#6d7c94"
                 secureTextEntry={true}
@@ -76,7 +77,7 @@ const Login: React.FC = () => {
               />
             </View>
 
-            <TouchableOpacity onPress={handleNavigateToResetPassword}>
+            <TouchableOpacity style={{ width: '50%' }} onPress={handleNavigateToResetPassword}>
               <Text style={styles.resetPassowrdTitle}>Esqueceu a senha?</Text>
             </TouchableOpacity>
 
@@ -91,7 +92,7 @@ const Login: React.FC = () => {
             <View style={styles.textFooterAling} >
               <Text style={styles.footerText}>Ainda não tem uma conta? </Text>
               <TouchableOpacity onPress={handleNavigateToRegister}>
-                <Text style={styles.footerTextBlue}>Cadastre-se</Text>
+                <Text style={globalStyles.footerLink}>Cadastre-se</Text>
               </TouchableOpacity>
             </View>
 
