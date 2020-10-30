@@ -4,10 +4,11 @@ import { GlobalColors } from '../../styles/Global';
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    width: 330,
     height: 170,
 
     marginTop: 20,
+    marginHorizontal: 7,
 
     paddingVertical: 20,
     paddingHorizontal: 12,

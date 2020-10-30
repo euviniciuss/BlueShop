@@ -19,7 +19,7 @@ const Login: React.FC = () => {
   const { navigate } = useNavigation();
 
   const handleLogin = () => {
-    navigate('Home')
+    navigate('BottomTabNavigator')
     // firebase.auth().signInWithEmailAndPassword(email, password)
     //   .then(sucess => {
     //     alert('Você fez login');

@@ -18,17 +18,7 @@ const styles = StyleSheet.create({
   },
 
   productsContainer: {
-
     backgroundColor: GlobalColors.colorContainer,
-
-    marginTop: -15,
-
-    paddingTop: 10,
-    paddingHorizontal: 15,
-
-    borderTopRightRadius: 15,
-    borderTopLeftRadius: 15,
-
   },
 
   containerTitle: {
