@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 
     borderRadius: 10,
 
-    backgroundColor: GlobalColors.colorContainer,
+    backgroundColor: '#f4f6ff',
 
     flexDirection: "row",
     alignItems: 'flex-start',

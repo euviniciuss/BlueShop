@@ -29,12 +29,12 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: "Poppins_700Bold",
   },
-  
+
   inputGroup: {
     flexDirection: 'column',
     justifyContent: 'space-between',
   },
-  
+
   buttonLogin: {
     display: "flex",
     alignItems: "center",
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     color: GlobalColors.colorSubTitle,
   },
 
-  
+
 
 });
 

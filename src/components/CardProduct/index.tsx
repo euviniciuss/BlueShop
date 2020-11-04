@@ -5,7 +5,7 @@ import jordan1 from '../../assets/images/jordan1.png';
 
 import styles from './styles';
 
-const Card: React.FC = () => {
+const CardProduct: React.FC = () => {
   return (
     <View style={styles.container}>
       <View style={styles.containerImage}>
@@ -33,4 +33,4 @@ const Card: React.FC = () => {
   );
 };
 
-export default Card;
+export default CardProduct;

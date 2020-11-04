@@ -10,13 +10,12 @@ const HeaderShopping: React.FC = () => {
     <SafeAreaView>
       <View style={styles.container}>
         <Text style={styles.title}>BlueShop</Text>
-
-        <View style={styles.passwordContainer}>
+        <View style={styles.searchContainer}>
           <Feather
             name="search"
             size={18} color="#3670ff"
           />
-          <TextInput 
+          <TextInput
             style={styles.inputSearch}
             placeholder="Pesquisar"
             placeholderTextColor="#3670ff"

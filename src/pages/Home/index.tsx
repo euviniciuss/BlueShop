@@ -3,15 +3,24 @@ import { SafeAreaView, View, Text, ScrollView } from 'react-native';
 
 import Card from '../../components/Card';
 import HeaderShopping from '../../components/HeaderShopping';
+import Banner from '../../components/Banner';
 
+import { GlobalColors, globalStyles } from '../../styles/Global';
 import styles from './styles';
 
 const Home: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <HeaderShopping />
-      <ScrollView style={styles.productsContainer}>
+      <ScrollView
+        style={styles.productsContainer}
+        showsHorizontalScrollIndicator={false}
+      >
+        <HeaderShopping />
+
         <View style={styles.containerMain}>
+          <Text style={globalStyles.titlePage}>O melhor para você está na <Text style={{ color: GlobalColors.colorBackground }}>Blue</Text></Text>
+          <Banner />
+
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
@@ -22,8 +31,12 @@ const Home: React.FC = () => {
               <Card />
             </View>
           </ScrollView>
-        </View>
 
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );

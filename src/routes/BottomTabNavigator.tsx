@@ -4,10 +4,12 @@ import { Feather } from '@expo/vector-icons';
 
 import Home from '../pages/Home';
 import Teste from '../pages/Teste';
+import Login from '../pages/Login';
+import Register from '../pages/Register';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
-function BottomTabNavigator() {
+const BottomTabNavigator: React.FC = () => {
     return (
         <Navigator
             tabBarOptions={{
@@ -17,28 +19,29 @@ function BottomTabNavigator() {
                     height: 64,
                 },
                 tabStyle: {
-                    flexDirection: "row",
+                    flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center",
                 },
+
                 iconStyle: {
                     flex: 0,
-                    width: 20,
-                    height: 20
+                    width: 25,
+                    height: 25
                 },
                 labelStyle: {
                     fontFamily: "Archivo_700Bold",
-                    fontSize: 13,
-                    marginLeft: 16
+                    fontSize: 12,
                 },
+
                 inactiveBackgroundColor: "#fafafc",
-                activeBackgroundColor: "#ebebf5",
-                inactiveTintColor: "#c1bccc",
-                activeTintColor: "#283a69"
+                // activeBackgroundColor: "#ebebf5",
+                inactiveTintColor: "#95abd8",
+                activeTintColor: "#3670ff"
             }}
         >
-            <Screen 
-                name="Home" 
+            <Screen
+                name="Home"
                 component={Home}
                 options={{
                     tabBarLabel: "Home",
@@ -49,11 +52,35 @@ function BottomTabNavigator() {
                     }
                 }}
             />
-            <Screen 
-                name="Teste" 
+            <Screen
+                name="Categorias"
+                component={Login}
+                options={{
+                    tabBarLabel: "Categorias",
+                    tabBarIcon: ({ color, size, focused }) => {
+                        return (
+                            <Feather name="list" size={size} color={focused ? "#3670ff" : color} />
+                        );
+                    }
+                }}
+            />
+            <Screen
+                name="Carrinho"
                 component={Teste}
                 options={{
-                    tabBarLabel: "Perfil",
+                    tabBarLabel: "Carrinho",
+                    tabBarIcon: ({ color, size, focused }) => {
+                        return (
+                            <Feather name="shopping-cart" size={size} color={focused ? "#3670ff" : color} />
+                        );
+                    }
+                }}
+            />
+            <Screen
+                name="Conta"
+                component={Register}
+                options={{
+                    tabBarLabel: "Conta",
                     tabBarIcon: ({ color, size, focused }) => {
                         return (
                             <Feather name="user" size={size} color={focused ? "#3670ff" : color} />

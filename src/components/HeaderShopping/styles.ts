@@ -5,36 +5,41 @@ import { GlobalColors } from '../../styles/Global';
 const styles = StyleSheet.create({
   container: {
     backgroundColor: GlobalColors.colorBackground,
-    paddingTop: 50,
+
+    paddingTop: 40,
     paddingBottom: 40,
-    paddingHorizontal: 12,
+    paddingHorizontal: 15,
+
+    borderBottomRightRadius: 15,
+    borderBottomLeftRadius: 15,
 
     flexDirection: 'column',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     justifyContent: 'space-between',
   },
 
   title: {
-    fontSize: 30,
+    fontSize: 28,
     fontFamily: "OleoScript_700Bold",
 
     color: GlobalColors.colorContainer,
   },
 
-  passwordContainer: {
+  searchContainer: {
     flexDirection: 'row',
     alignItems: "center",
-    
+
     height: 45,
     width: '100%',
 
-    backgroundColor: GlobalColors.colorContainer,
+    backgroundColor: GlobalColors.colorBackgroundHome,
 
     borderRadius: 8,
+
     paddingHorizontal: 16,
 
     marginTop: 18,
-   
+
   },
 
   inputSearch: {
@@ -42,8 +47,8 @@ const styles = StyleSheet.create({
 
     fontSize: 15,
     fontWeight: '700',
-    color: '#3670ff',
-    
+    color: GlobalColors.colorBackground,
+
     marginLeft: 12,
   },
 

@@ -10,15 +10,16 @@ const styles = StyleSheet.create({
   },
 
   containerMain: {
-    marginTop: 25,
     width: '100%',
 
     justifyContent: "center",
     alignItems: 'flex-start',
+
+    paddingHorizontal: 12,
   },
 
   productsContainer: {
-    backgroundColor: GlobalColors.colorContainer,
+    backgroundColor: GlobalColors.colorBackgroundHome,
   },
 
   containerTitle: {
