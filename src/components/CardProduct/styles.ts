@@ -4,31 +4,41 @@ import { GlobalColors } from '../../styles/Global';
 
 const styles = StyleSheet.create({
   container: {
-    width: 330,
-    height: 170,
+    width: '46%',
+    height: 250,
 
-    marginTop: 20,
+    marginVertical: 12,
     marginHorizontal: 7,
+
 
     paddingVertical: 20,
     paddingHorizontal: 12,
 
     borderRadius: 10,
 
-    backgroundColor: '#f4f6ff',
+    backgroundColor: GlobalColors.colorContainer,
 
-    flexDirection: "row",
-    alignItems: 'flex-start',
+    flexDirection: "column",
+    alignItems: 'center',
+
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 1,
   },
 
   containerImage: {
-    width: '40%',
-    height: '100%',
+    width: '100%',
+    height: 120,
 
     backgroundColor: '#fbfcff',
 
     borderRadius: 10,
-    marginRight: 15,
     paddingHorizontal: 8,
 
     alignItems: 'center',
@@ -36,24 +46,18 @@ const styles = StyleSheet.create({
 
   },
 
-  containerRight: {
-    width: '54%',
-    height: '100%',
+  containerDown: {
+    width: '100%',
 
     flexDirection: 'column',
     justifyContent: 'space-between',
+    marginTop: 10,
   },
 
   titleCard: {
     color: GlobalColors.colorTitle,
-    fontSize: 17,
+    fontSize: 15,
     fontFamily: "Poppins_700Bold",
-  },
-
-  descriptionCard: {
-    color: GlobalColors.colorSubTitle,
-    fontSize: 12,
-    fontFamily: "Poppins_400Regular",
   },
 
   footer: {
@@ -61,7 +65,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
 
-    marginTop: 5,
+    marginTop: 10,
   },
 
   buttonPurchase: {
@@ -69,17 +73,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
 
     width: '40%',
-    padding: 10,
-    borderRadius: 10,
+
+    paddingVertical: 8,
+
+    borderRadius: 12,
 
     backgroundColor: GlobalColors.colorBackground,
-  },
-
-  textButton: {
-    color: GlobalColors.colorContainer,
-
-    fontSize: 9.5,
-    fontFamily: "Poppins_700Bold",
   },
 
 

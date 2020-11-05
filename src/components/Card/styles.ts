@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
 
     marginTop: 20,
     marginHorizontal: 7,
+    marginBottom: 2,
 
     paddingVertical: 20,
     paddingHorizontal: 12,
@@ -19,7 +20,19 @@ const styles = StyleSheet.create({
 
     flexDirection: "row",
     alignItems: 'flex-start',
+
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 2,
   },
+
+
 
   containerImage: {
     width: '40%',

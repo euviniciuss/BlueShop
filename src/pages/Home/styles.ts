@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
 
     paddingHorizontal: 12,
+    marginBottom: 25,
   },
 
   productsContainer: {
@@ -36,6 +37,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
 
+  containerCardProduct: {
+    flexDirection: 'row',
+  },
+
   title: {
     color: GlobalColors.colorTitle,
     fontSize: 24,
@@ -47,7 +52,6 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontFamily: "Poppins_400Regular",
   },
-
 
 });
 

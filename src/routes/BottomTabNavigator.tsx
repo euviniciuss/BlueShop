@@ -35,7 +35,7 @@ const BottomTabNavigator: React.FC = () => {
                 },
 
                 inactiveBackgroundColor: "#fafafc",
-                // activeBackgroundColor: "#ebebf5",
+                activeBackgroundColor: "#fafafc",
                 inactiveTintColor: "#95abd8",
                 activeTintColor: "#3670ff"
             }}

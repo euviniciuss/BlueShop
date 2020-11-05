@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 
+import { Feather } from '@expo/vector-icons';
+
 import jordan1 from '../../assets/images/jordan1.png';
 
 import styles from './styles';
@@ -9,13 +11,12 @@ const CardProduct: React.FC = () => {
   return (
     <View style={styles.container}>
       <View style={styles.containerImage}>
-        <Image source={jordan1} style={{ width: '100%', height: '60%' }}></Image>
+        <Image source={jordan1} style={{ width: '100%', height: '100%' }}></Image>
       </View>
 
-      <View style={styles.containerRight}>
+      <View style={styles.containerDown}>
         <View>
           <Text style={styles.titleCard}>Air Jordan 1 Mid</Text>
-          <Text style={styles.descriptionCard}>Lorem Ipsum is simply dummy text of the printing</Text>
         </View>
 
         <View style={styles.footer}>
@@ -24,7 +25,7 @@ const CardProduct: React.FC = () => {
             style={styles.buttonPurchase}
             activeOpacity={0.9}
           >
-            <Text style={styles.textButton}>Comprar</Text>
+            <Feather name="shopping-cart" color='white' size={20} />
           </TouchableOpacity>
         </View>
 

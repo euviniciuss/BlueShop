@@ -37,7 +37,7 @@ const Banner: React.FC = () => {
     },
   ]);
 
-  const _renderItem = ({ item }) => {
+  const _renderItem = ({ item, index }) => {
     return (
       <View>
         <Image
@@ -53,6 +53,7 @@ const Banner: React.FC = () => {
       <Carousel
         style={styles.carousel}
         ref={carouselRef}
+        firstItem={1}
         data={listProducts}
         renderItem={_renderItem}
         sliderWidth={screenWidth}
