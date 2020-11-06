@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Feather } from '@expo/vector-icons';
 
 import Home from '../pages/Home';
-import Teste from '../pages/Teste';
+import Categories from '../pages/Categories';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 
@@ -54,7 +54,7 @@ const BottomTabNavigator: React.FC = () => {
             />
             <Screen
                 name="Categorias"
-                component={Login}
+                component={Categories}
                 options={{
                     tabBarLabel: "Categorias",
                     tabBarIcon: ({ color, size, focused }) => {
@@ -66,7 +66,7 @@ const BottomTabNavigator: React.FC = () => {
             />
             <Screen
                 name="Carrinho"
-                component={Teste}
+                component={Login}
                 options={{
                     tabBarLabel: "Carrinho",
                     tabBarIcon: ({ color, size, focused }) => {

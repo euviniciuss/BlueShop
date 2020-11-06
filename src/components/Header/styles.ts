@@ -6,20 +6,34 @@ const styles = StyleSheet.create({
 
   container: {
     backgroundColor: GlobalColors.colorBackground,
-    paddingTop: 50,
-    paddingBottom: 40,
+
+    paddingTop: 35,
+    paddingBottom: 25,
     paddingHorizontal: 30,
 
+  },
+
+  containerHeader: {
     flexDirection: 'row',
     alignItems: 'center',
+    textAlign: 'center',
     justifyContent: 'space-between',
   },
 
-  title: {
+  logo: {
     fontSize: 18,
     fontFamily: "OleoScript_700Bold",
 
     color: GlobalColors.colorContainer,
+  },
+
+  title: {
+    color: GlobalColors.colorContainer,
+
+    fontSize: 20,
+    fontFamily: "Poppins_700Bold",
+
+    marginLeft: -5,
   },
 
 });

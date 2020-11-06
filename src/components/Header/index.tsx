@@ -7,22 +7,31 @@ import { Ionicons } from '@expo/vector-icons';
 
 import styles from './styles';
 
-const Header: React.FC = () => {
-  const { navigate } = useNavigation();
+interface HeaderProps {
+  logo?: string,
+  title?: string,
+};
+
+const Header: React.FC<HeaderProps> = ({ logo, title }) => {
+  const { goBack } = useNavigation();
 
   const handleGoBack = () => {
-    navigate('Landing');
+    goBack();
   };
 
   return (
     <SafeAreaView>
       <View style={styles.container}>
-        <Ionicons
-          name="md-arrow-round-back"
-          size={24} color="white"
-          onPress={handleGoBack}
-        />
-        <Text style={styles.title}>BlueShop</Text>
+        <View style={styles.containerHeader}>
+          <Ionicons
+            name="md-arrow-round-back"
+            size={24} color="white"
+            onPress={handleGoBack}
+          />
+
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.logo}>{logo}</Text>
+        </View>
       </View>
     </SafeAreaView>
   );

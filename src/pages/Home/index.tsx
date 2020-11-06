@@ -38,23 +38,11 @@ const Home: React.FC = () => {
           </ScrollView>
 
           <TitlePromotions title="Os melhores tênis" />
-
           <View style={styles.containerCardProduct}>
             <CardProduct />
             <CardProduct />
           </View>
-          <TitlePromotions title="Os melhores tênis" />
 
-          <View style={styles.containerCardProduct}>
-            <CardProduct />
-            <CardProduct />
-          </View>
-          <TitlePromotions title="Os melhores tênis" />
-
-          <View style={styles.containerCardProduct}>
-            <CardProduct />
-            <CardProduct />
-          </View>
         </View>
       </ScrollView>
     </SafeAreaView>

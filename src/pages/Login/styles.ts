@@ -5,14 +5,12 @@ import { GlobalColors } from '../../styles/Global';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: GlobalColors.colorContainer,
+    backgroundColor: GlobalColors.colorBackground,
   },
 
   formContainer: {
-
+    height: '100%',
     backgroundColor: GlobalColors.colorContainer,
-
-    marginTop: -15,
 
     paddingTop: 10,
     paddingHorizontal: 30,

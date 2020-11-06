@@ -37,7 +37,7 @@ const Banner: React.FC = () => {
     },
   ]);
 
-  const _renderItem = ({ item, index }) => {
+  const _renderItem = ({ item }) => {
     return (
       <View>
         <Image
