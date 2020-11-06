@@ -46,7 +46,7 @@ const Register: React.FC = () => {
         <KeyboardAvoidingView behavior="position">
 
           <Header logo="Blueshop" />
-          <View style={styles.formContainer}>
+          <View style={globalStyles.formContainer}>
             <Text style={globalStyles.titlePage}>Seja bem vindo!</Text>
             <Text style={globalStyles.subTitlePage}>Olá, faça seu cadastro para continuar</Text>
 

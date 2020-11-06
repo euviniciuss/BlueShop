@@ -23,6 +23,20 @@ export const globalStyles = StyleSheet.create({
     fontFamily: "Poppins_400Regular",
   },
 
+  formContainer: {
+    height: '100%',
+    backgroundColor: GlobalColors.colorContainer,
+
+    paddingTop: 10,
+    paddingHorizontal: 30,
+
+    borderTopRightRadius: 15,
+    borderTopLeftRadius: 15,
+
+    marginTop: 10,
+
+  },
+
   label: {
     marginTop: 24,
     marginBottom: 12,

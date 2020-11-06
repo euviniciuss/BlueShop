@@ -8,19 +8,6 @@ const styles = StyleSheet.create({
     backgroundColor: GlobalColors.colorBackground,
   },
 
-  formContainer: {
-
-    height: '100%',
-    backgroundColor: GlobalColors.colorContainer,
-
-    paddingTop: 10,
-    paddingHorizontal: 30,
-
-    borderTopRightRadius: 15,
-    borderTopLeftRadius: 15,
-
-  },
-
   inputGroup: {
     flexDirection: 'column',
     justifyContent: 'space-between',

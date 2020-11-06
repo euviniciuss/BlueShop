@@ -46,7 +46,7 @@ const Login: React.FC = () => {
         <KeyboardAvoidingView behavior="position">
 
           <Header logo="Blueshop" />
-          <View style={styles.formContainer}>
+          <View style={globalStyles.formContainer}>
             <Text style={globalStyles.titlePage}>Bem vindo de volta!</Text>
             <Text style={globalStyles.subTitlePage}>Olá, faça o login para continuar</Text>
 

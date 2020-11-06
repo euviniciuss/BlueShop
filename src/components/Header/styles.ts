@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     backgroundColor: GlobalColors.colorBackground,
 
     paddingTop: 35,
-    paddingBottom: 25,
+    paddingBottom: 20,
     paddingHorizontal: 30,
 
   },
