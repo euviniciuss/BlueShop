@@ -3,10 +3,9 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-// import Home from '../pages/Home';
+import Landing from '../pages/Landing';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
-import Landing from '../pages/Landing';
 import BottomTabNavigator from './BottomTabNavigator';
 
 const { Navigator, Screen } = createStackNavigator();

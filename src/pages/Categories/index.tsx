@@ -1,45 +1,41 @@
 import React from 'react';
 
 import { SafeAreaView, FlatList, Text, View } from 'react-native';
+import { Feather } from '@expo/vector-icons';
 
-import Header from '../../components/Header';
+import HeaderPages from '../../components/HeaderPages';
 
 import styles from './styles';
 
 const Categories: React.FC = () => {
   const listProducts = [
-    { id: '1', desc: 'Produto 1' },
-    { id: '2', desc: 'Produto 2' },
-    { id: '3', desc: 'Produto 3' },
-    { id: '4', desc: 'Produto 4' },
-    { id: '5', desc: 'Produto 5' },
-    { id: '6', desc: 'Produto 6' },
-    { id: '7', desc: 'Produto 7' },
-    { id: '11', desc: 'Produto 1' },
-    { id: '21', desc: 'Produto 2' },
-    { id: '31', desc: 'Produto 3' },
-    { id: '41', desc: 'Produto 4' },
-    { id: '51', desc: 'Produto 5' },
-    { id: '61', desc: 'Produto 6' },
-    { id: '71', desc: 'Produto 7' },
-    { id: '12', desc: 'Produto 1' },
-    { id: '22', desc: 'Produto 2' },
-    { id: '32', desc: 'Produto 3' },
-    { id: '42', desc: 'Produto 4' },
-    { id: '52', desc: 'Produto 5' },
-    { id: '62', desc: 'Produto 6' },
-    { id: '72', desc: 'Produto 7' },
+    { id: '1', desc: 'Moda' },
+    { id: '2', desc: 'Celular e SmartPhone' },
+    { id: '3', desc: 'TV e Vídeo' },
+    { id: '4', desc: 'Informática' },
+    { id: '5', desc: 'Eletrodomésticos' },
+    { id: '6', desc: 'Games' },
+    { id: '7', desc: 'Mercado' },
+    { id: '8', desc: 'Pet Shop' },
+    { id: '9', desc: 'Casa' },
+    { id: '10', desc: 'Cozinha' },
+    { id: '11', desc: 'Papelaria' },
   ];
 
   return (
     <SafeAreaView>
-      <Header logo="" title="Categorias" />
+      <HeaderPages title="Categorias"/>
       <FlatList
         data={listProducts}
         keyExtractor={item => item.id}
         renderItem={({ item }) => (
           <View style={styles.containerItems}>
             <Text style={styles.textItem}>{item.desc}</Text>
+            <Feather 
+              name="chevron-right"
+              size={23}
+              color="#3670ff"
+            />
           </View>
         )}
       />

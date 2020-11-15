@@ -24,7 +24,7 @@ export const globalStyles = StyleSheet.create({
   },
 
   formContainer: {
-    height: '100%',
+    
     backgroundColor: GlobalColors.colorContainer,
 
     paddingTop: 10,
@@ -33,7 +33,7 @@ export const globalStyles = StyleSheet.create({
     borderTopRightRadius: 15,
     borderTopLeftRadius: 15,
 
-    marginTop: 10,
+    marginTop: -15,
 
   },
 

@@ -7,7 +7,11 @@ import { Ionicons } from '@expo/vector-icons';
 
 import styles from './styles';
 
-const Header: React.FC = () => {
+interface HeaderPagesProps {
+  title: string,
+};
+
+const HeaderPages: React.FC<HeaderPagesProps> = ({ title }) => {
   const { goBack } = useNavigation();
 
   const handleGoBack = () => {
@@ -24,11 +28,11 @@ const Header: React.FC = () => {
             onPress={handleGoBack}
           />
 
-          <Text style={styles.logo}>Blueshop</Text>
+          <Text style={styles.title}>{title}</Text>
         </View>
       </View>
     </SafeAreaView>
   );
 }
 
-export default Header;
+export default HeaderPages;

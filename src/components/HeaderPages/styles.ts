@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: GlobalColors.colorBackground,
 
-    paddingVertical: 42,
+    marginTop: 23,
+    paddingVertical: 20,
     paddingHorizontal: 30,
 
   },
@@ -16,12 +17,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     textAlign: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
   },
 
-  logo: {
+  title: {
     fontSize: 18,
-    fontFamily: "OleoScript_700Bold",
+    fontFamily: "Poppins_700Bold",
+
+    marginLeft: '28%',
 
     color: GlobalColors.colorContainer,
   },

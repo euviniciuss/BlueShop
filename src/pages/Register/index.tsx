@@ -45,7 +45,7 @@ const Register: React.FC = () => {
       <SafeAreaView style={styles.container}>
         <KeyboardAvoidingView behavior="position">
 
-          <Header logo="Blueshop" />
+          <Header />
           <View style={globalStyles.formContainer}>
             <Text style={globalStyles.titlePage}>Seja bem vindo!</Text>
             <Text style={globalStyles.subTitlePage}>Olá, faça seu cadastro para continuar</Text>

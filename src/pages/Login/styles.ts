@@ -5,7 +5,7 @@ import { GlobalColors } from '../../styles/Global';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: GlobalColors.colorBackground,
+    backgroundColor: GlobalColors.colorContainer,
   },
 
   resetPassowrdTitle: {

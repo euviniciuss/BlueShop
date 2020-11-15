@@ -45,7 +45,7 @@ const Login: React.FC = () => {
       <SafeAreaView style={styles.container}>
         <KeyboardAvoidingView behavior="position">
 
-          <Header logo="Blueshop" />
+          <Header />
           <View style={globalStyles.formContainer}>
             <Text style={globalStyles.titlePage}>Bem vindo de volta!</Text>
             <Text style={globalStyles.subTitlePage}>Olá, faça o login para continuar</Text>
