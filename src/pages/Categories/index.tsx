@@ -23,15 +23,15 @@ const Categories: React.FC = () => {
   ];
 
   return (
-    <SafeAreaView>
-      <HeaderPages title="Categorias"/>
+    <SafeAreaView style={styles.container}>
+      <HeaderPages title="Categorias" />
       <FlatList
         data={listProducts}
         keyExtractor={item => item.id}
         renderItem={({ item }) => (
           <View style={styles.containerItems}>
             <Text style={styles.textItem}>{item.desc}</Text>
-            <Feather 
+            <Feather
               name="chevron-right"
               size={23}
               color="#3670ff"

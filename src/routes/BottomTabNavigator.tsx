@@ -4,7 +4,7 @@ import { Feather } from '@expo/vector-icons';
 
 import Home from '../pages/Home';
 import Categories from '../pages/Categories';
-import Login from '../pages/Login';
+import ShoppingCart from '../pages/ShoppingCart';
 import Register from '../pages/Register';
 
 const { Navigator, Screen } = createBottomTabNavigator();
@@ -66,7 +66,7 @@ const BottomTabNavigator: React.FC = () => {
             />
             <Screen
                 name="Carrinho"
-                component={Login}
+                component={ShoppingCart}
                 options={{
                     tabBarLabel: "Carrinho",
                     tabBarIcon: ({ color, size, focused }) => {

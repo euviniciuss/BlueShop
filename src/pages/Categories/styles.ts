@@ -2,6 +2,10 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
 
+  container: {
+    flex: 1,
+  },
+
   containerItems: {
     padding: 25,
 
@@ -19,7 +23,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_700Bold',
 
     color: '#182947',
-    
+
   },
 });
 
